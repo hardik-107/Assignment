@@ -1,0 +1,121 @@
+
+
+                                                                                    HTML
+
+
+
+
+
+1.Are the HTML tags and elements the same thing?
+No, they're not the same. HTML tags are the markup characters that surround the elements and denote their beginning and end. HTML elements are everything between the start tag and the end tag, including the tags themselves and the content within them.
+
+2.What are tags and attributes in HTML?
+Tags are the markup characters used to denote the start and end of HTML elements. Attributes provide additional information about HTML elements and are always specified in the start tag.
+
+3.What are void elements in HTML?
+Void elements, also known as empty elements or self-closing tags, are elements in HTML that don't have any content or closing tag. Examples include <br>, <img>, and <input>.
+4.What are HTML Entities?
+HTML entities are special codes used to display reserved characters or characters that are not easily typable directly from the keyboard. For example, &lt; represents the less-than sign (<), and &amp; represents the ampersand (&).
+
+5.What are different types of lists in HTML?
+HTML supports three types of lists: unordered lists (<ul>), ordered lists (<ol>), and definition lists (<dl>).
+
+6.What is the ‘class’ attribute in HTML?
+The class attribute in HTML is used to specify one or more class names for an element. It's commonly used to apply CSS styles or JavaScript behaviors to multiple elements with the same class.
+
+7.What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements?
+The id attribute is used to uniquely identify an element on a web page, while the class attribute is used to group elements together for styling or scripting purposes. id must be unique within a page, while class can be applied to multiple elements.
+
+8.What are the various formatting tags in HTML?
+HTML formatting tags include <b> for bold, <i> for italic, <u> for underline (though not recommended for styling purposes), <strong> for strong emphasis, <em> for emphasis, and <strike> for strikethrough (though deprecated).
+
+9.How is Cell Padding different from Cell Spacing?
+Cell padding refers to the space between the content of a cell and its border, while cell spacing refers to the space between cells in a table.
+
+10.How can we club two or more rows or columns into a single row or column in an HTML table?
+This can be achieved using the rowspan attribute for rows and the colspan attribute for columns within the <td> or <th> tags.
+
+11.What is the difference between a block-level element and an inline element?
+Block-level elements typically start on a new line and occupy the full width available to them, pushing subsequent content downwards. They can contain other block-level and inline elements. Inline elements, on the other hand, do not start on a new line and only occupy the space bounded by the tags themselves. They cannot contain block-level elements and only affect the formatting of individual pieces of data within a block-level element.
+12.How to create a Hyperlink in HTML?
+Hyperlinks are created using the <a> (anchor) element in HTML. You specify the URL you want to link to using the href attribute. For example:
+html
+
+<a href="https://example.com">Visit Example</a>
+13.What is the use of an iframe tag?
+The <iframe> tag is used to embed another HTML document within the current HTML document. It's commonly used to embed content from another source, such as a video, map, or external webpage.
+
+14.What is the use of a span tag? Explain with an example?
+The <span> tag is an inline element used to apply styles or scripting to a specific section of text within a larger block of content. For example:
+html
+
+<p>This is <span style="color: red;">red</span> text.</p>
+
+15.How to insert a picture into the background image of a web page?
+You can set a background image for a web page using CSS, not HTML. You can do this by targeting the body element or any other container element and setting the background-image property to the URL of the image. For example:
+css
+
+body {
+    background-image: url('background.jpg');
+}
+
+16.How are active links different from normal links?
+Active links are typically styled differently from normal links to indicate to users that they are currently being interacted with. For example, active links might change color or have a different background color when clicked.
+
+17.What are the different tags to separate sections of text?
+HTML provides several tags to separate sections of text, including <div> for generic divisions, <p> for paragraphs, <header> for introductory content, <footer> for concluding content, <section> for thematic grouping, <article> for independent, self-contained content, and more.
+
+18.What is SVG?
+SVG stands for Scalable Vector Graphics. It's an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. SVG images can be created and edited with any text editor, and they can be scaled without losing quality.
+
+19.What is the difference between HTML and XHTML?
+XHTML is a stricter, more XML-based version of HTML. XHTML requires that all elements be properly nested, all tags be lowercase, and all attributes be in quotes. XHTML documents must also be well-formed XML documents, meaning they must have a root element and adhere to XML syntax rules.
+
+20.What are logical and physical tags in HTML?
+Logical tags describe the structure of content (e.g., <header>, <footer>, <nav>, <section>), while physical tags describe how content should appear (e.g., <b> for bold, <i> for italic). HTML5 focuses more on semantic, logical tags to describe content, rather than physical presentation.
+
+
+
+
+                                                                                   HTML 5
+Sure, here are the explanations for your remaining questions:
+
+1. **What are the new tags added in HTML5?**
+   - HTML5 introduced several new semantic and structural elements to better define the different parts of a web page's content. Some of these new tags include:
+     - `<header>`: Represents introductory content typically at the beginning of a section or webpage.
+     - `<nav>`: Represents a section of navigation links.
+     - `<section>`: Represents a thematic grouping of content, typically with a heading.
+     - `<article>`: Represents independent, self-contained content, such as a blog post or news article.
+     - `<aside>`: Represents content that is tangentially related to the content around it.
+     - `<footer>`: Represents concluding content, typically at the end of a section or webpage.
+     - `<figure>`: Represents self-contained content, such as images or diagrams, accompanied by a caption.
+     - `<figcaption>`: Represents the caption or description for a `<figure>` element.
+     - `<main>`: Represents the main content of the document.
+     - `<time>`: Represents a specific period in time or a duration.
+
+2. **How to embed audio and video in a webpage?**
+   - HTML5 introduced the `<audio>` and `<video>` elements for embedding audio and video content, respectively. Here's an example of how you can use them:
+     ```html
+     <audio controls>
+       <source src="audio.mp3" type="audio/mp3">
+       Your browser does not support the audio element.
+     </audio>
+     
+     <video controls width="320" height="240">
+       <source src="video.mp4" type="video/mp4">
+       Your browser does not support the video element.
+     </video>
+     ```
+   - The `controls` attribute adds playback controls to the media player, and the `<source>` element specifies the source of the audio or video file.
+
+3. **Semantic element in HTML5?**
+   - Semantic elements in HTML5 are those that provide meaning to the content they enclose, making it more understandable for both browsers and developers. Semantic elements describe the role or purpose of the content, rather than its appearance. Examples include `<header>`, `<nav>`, `<section>`, `<article>`, `<aside>`, `<footer>`, `<main>`, `<time>`, etc.
+
+4. **Canvas and SVG tags**
+   - `<canvas>`: The `<canvas>` element is used to draw graphics, animations, and interactive content on a web page using JavaScript. It provides a resolution-dependent bitmap canvas, where you can dynamically create and manipulate graphics.
+   - `<svg>`: The `<svg>` element is used to embed Scalable Vector Graphics (SVG) into an HTML document. SVG is an XML-based vector image format that allows for the creation of graphics that scale well and can be styled and scripted like HTML elements. SVG is particularly useful for creating complex graphics and animations.
+
+   Both `<canvas>` and `<svg>` can be used to create visual content on a webpage, but they have different use cases and approaches. `<canvas>` is more suitable for dynamic, scripted graphics, while `<svg>` is better for static or declarative graphics.
+
+
+
