@@ -1,0 +1,75 @@
+Here is a clean, theoretical answer to each question, suitable for a university exam:
+
+---
+
+### 1. **Why Django should be used for web-development?**
+
+Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. Key reasons to use Django:
+
+* Rapid Development: Comes with many built-in features like ORM, admin panel, authentication.
+* Security: Helps developers avoid common mistakes such as SQL injection, CSRF, and XSS.
+* Scalability: Suitable for both small and large applications.
+* Batteries-included: Django includes almost everything required to build a web app.
+* Community Support: Extensive documentation and strong community.
+
+---
+
+### 2. **How can you create a project in Django?**
+
+To create a project in Django:
+
+1. Install Django using `pip install django`.
+2. Use the command `django-admin startproject projectname` to create a new project.
+3. Navigate into the project folder and run `python manage.py runserver` to start the development server.
+
+---
+
+### 3. **How to check installed version of Django?**
+
+To check the installed version of Django, run the following command in the terminal:
+
+```
+django-admin --version
+```
+
+This displays the currently installed version of Django.
+
+---
+
+### 4. **Explain what `django-admin.py makemessages` command is used for?**
+
+This command is used for internationalization. It scans the source code for translation strings and generates message files (usually `.po` files) which can be translated into different languages. These are later compiled to `.mo` files used during runtime.
+
+---
+
+### 5. **What is Django URLs?**
+
+In Django, URLs are handled using a URL dispatcher which maps URL patterns to views. This allows Django to know what code to execute when a certain URL is requested. The `urls.py` file is used to define this mapping.
+
+---
+
+### 6. **What is a QuerySet?**
+
+A QuerySet is a collection of database queries to retrieve objects from the database in Django. It allows filtering, slicing, ordering, and chaining operations to fetch only the required data in an efficient manner.
+
+---
+
+### 7. **Mention what command line can be used to load data into Django?**
+
+To load data into a Django application, the following command is used:
+
+```
+python manage.py loaddata <filename.json>
+```
+
+This loads data from fixtures (usually in JSON format) into the database.
+
+---
+
+### 8. **Explain what `django-admin.py makemessages` command is used for?**
+
+(*Duplicate question, already answered above*)
+This command is used to extract translation strings from source files and prepare them for translation, which is part of Django’s support for internationalization (i18n).
+
+---
+
